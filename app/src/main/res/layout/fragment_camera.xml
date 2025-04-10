@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- Camera Preview -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:contentDescription="@string/camera_preview_description"
+        app:layout_constraintBottom_toTopOf="@+id/controlsContainer"
+        app:layout_constraintTop_toBottomOf="@+id/statusText" />
+
+    <!-- Status Text with High Contrast -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CC000000"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/ready_to_detect"
+        android:contentDescription="@string/status_text_description" />
+
+    <!-- Controls Container -->
+    <LinearLayout
+        android:id="@+id/controlsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Detect Button (Large Target) -->
+        <Button
+            android:id="@+id/detectButton"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="@string/detect"
+            android:textSize="18sp"
+            android:backgroundTint="#8000FF"
+            android:textColor="#FFFFFF"
+            android:contentDescription="@string/detect_button_description" />
+
+        <!-- Settings Button (Large Target) -->
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="@string/settings"
+            android:textSize="18sp"
+            android:backgroundTint="#8000FF"
+            android:textColor="#FFFFFF"
+            android:contentDescription="@string/settings_button_description" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

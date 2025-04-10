@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Vision Assist</string>
+
+    <!-- Camera Fragment -->
+    <string name="camera_preview_description">Camera view showing what the camera sees</string>
+    <string name="detect">DETECT</string>
+    <string name="settings">SETTINGS</string>
+    <string name="detect_button_description">Start object detection</string>
+    <string name="settings_button_description">Open settings menu</string>
+    <string name="status_text_description">Information about current detection status</string>
+    <string name="ready_to_detect">Ready to detect objects</string>
+
+    <!-- Accessibility -->
+    <string name="object_detected">%1$s detected, %2$d percent confident</string>
+    <string name="no_objects_detected">No objects detected</string>
+    <string name="permission_required">Camera permission is required</string>
+    <string name="error_initializing_camera">Error initializing camera</string>
+</resources>

@@ -1,0 +1,104 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   '@anthropic-ai/claude-code' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData @anthropic-ai/claude-code
+8 silly fetchNamedPackageData @anthropic-ai/claude-code
+9 silly mapToRegistry name @anthropic-ai/claude-code
+10 silly mapToRegistry scope (from package name) @anthropic-ai
+11 verbose mapToRegistry no registry URL found in name for scope @anthropic-ai
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/@anthropic-ai%2fclaude-code
+15 verbose request uri https://registry.npmjs.org/@anthropic-ai%2fclaude-code
+16 verbose request no auth needed
+17 info attempt registry request try #1 at 1:56:31 PM
+18 verbose request id 705566c1f99849ca
+19 http request GET https://registry.npmjs.org/@anthropic-ai%2fclaude-code
+20 http 200 https://registry.npmjs.org/@anthropic-ai%2fclaude-code
+21 verbose headers { date: 'Thu, 10 Apr 2025 05:56:32 GMT',
+21 verbose headers   'content-type': 'application/json',
+21 verbose headers   'transfer-encoding': 'chunked',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'cf-ray': '92e000642f95eb2a-SJC',
+21 verbose headers   'cf-cache-status': 'HIT',
+21 verbose headers   'access-control-allow-origin': '*',
+21 verbose headers   age: '91',
+21 verbose headers   'cache-control': 'public, max-age=300',
+21 verbose headers   etag: 'W/"3658336cab4aab13cc52f2f4b7ffface"',
+21 verbose headers   'last-modified': 'Wed, 09 Apr 2025 22:17:49 GMT',
+21 verbose headers   vary: 'accept-encoding, accept',
+21 verbose headers   'set-cookie':
+21 verbose headers    [ '_cfuvid=b0uiP4w_Fv0jdrgaEcFo2226pKsV324WwR0tnyPlmuI-1744264592076-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None' ],
+21 verbose headers   server: 'cloudflare',
+21 verbose headers   'content-encoding': 'gzip' }
+22 silly get cb [ 200,
+22 silly get   { date: 'Thu, 10 Apr 2025 05:56:32 GMT',
+22 silly get     'content-type': 'application/json',
+22 silly get     'transfer-encoding': 'chunked',
+22 silly get     connection: 'keep-alive',
+22 silly get     'cf-ray': '92e000642f95eb2a-SJC',
+22 silly get     'cf-cache-status': 'HIT',
+22 silly get     'access-control-allow-origin': '*',
+22 silly get     age: '91',
+22 silly get     'cache-control': 'public, max-age=300',
+22 silly get     etag: 'W/"3658336cab4aab13cc52f2f4b7ffface"',
+22 silly get     'last-modified': 'Wed, 09 Apr 2025 22:17:49 GMT',
+22 silly get     vary: 'accept-encoding, accept',
+22 silly get     'set-cookie':
+22 silly get      [ '_cfuvid=b0uiP4w_Fv0jdrgaEcFo2226pKsV324WwR0tnyPlmuI-1744264592076-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None' ],
+22 silly get     server: 'cloudflare',
+22 silly get     'content-encoding': 'gzip' } ]
+23 verbose get saving @anthropic-ai/claude-code to /home/suzy/.npm/registry.npmjs.org/_40anthropic-ai_252fclaude-code/.cache.json
+24 verbose makeDirectory /home/suzy/.npm creation not in flight; initializing
+25 silly makeDirectory /home/suzy/.npm uid: 1000 gid: 1000
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 verbose stack Error: Missing required argument #1
+38 verbose stack     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+38 verbose stack     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+38 verbose stack     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+38 verbose stack     at /usr/share/npm/lib/install/deps.js:190:5
+38 verbose stack     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:35
+38 verbose stack     at Array.forEach (<anonymous>)
+38 verbose stack     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:11
+38 verbose stack     at Array.forEach (<anonymous>)
+38 verbose stack     at asyncMap (/usr/share/npm/node_modules/slide/lib/async-map.js:51:8)
+38 verbose stack     at exports.loadRequestedDeps (/usr/share/npm/lib/install/deps.js:188:3)
+39 verbose cwd /mnt/c/ComputerLearning/Android/visionassist
+40 error Linux 4.4.0-22621-Microsoft
+41 error argv "/usr/bin/node" "/usr/bin/npm" "install" "-g" "@anthropic-ai/claude-code"
+42 error node v8.10.0
+43 error npm  v3.5.2
+44 error code EMISSINGARG
+45 error typeerror Error: Missing required argument #1
+45 error typeerror     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+45 error typeerror     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+45 error typeerror     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+45 error typeerror     at /usr/share/npm/lib/install/deps.js:190:5
+45 error typeerror     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:35
+45 error typeerror     at Array.forEach (<anonymous>)
+45 error typeerror     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:11
+45 error typeerror     at Array.forEach (<anonymous>)
+45 error typeerror     at asyncMap (/usr/share/npm/node_modules/slide/lib/async-map.js:51:8)
+45 error typeerror     at exports.loadRequestedDeps (/usr/share/npm/lib/install/deps.js:188:3)
+46 error typeerror This is an error with npm itself. Please report this error at:
+46 error typeerror     <http://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="Speech Settings"
+        android:key="speech_category"
+        app:iconSpaceReserved="false">
+
+        <SeekBarPreference
+            android:key="speech_rate"
+            android:title="Speech Rate"
+            android:summary="Adjust how fast the app speaks"
+            android:defaultValue="10"
+            android:max="20"
+            app:min="5"
+            app:showSeekBarValue="true"
+            app:iconSpaceReserved="false" />
+
+        <SeekBarPreference
+            android:key="speech_pitch"
+            android:title="Speech Pitch"
+            android:summary="Adjust the pitch of the voice"
+            android:defaultValue="10"
+            android:max="20"
+            app:min="5"
+            app:showSeekBarValue="true"
+            app:iconSpaceReserved="false" />
+
+        <SeekBarPreference
+            android:key="speech_volume"
+            android:title="Speech Volume"
+            android:summary="Adjust the volume of speech"
+            android:defaultValue="10"
+            android:max="10"
+            app:min="1"
+            app:showSeekBarValue="true"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Detection Settings"
+        android:key="detection_category"
+        app:iconSpaceReserved="false">
+
+        <SeekBarPreference
+            android:key="detection_threshold"
+            android:title="Detection Confidence"
+            android:summary="Minimum confidence level for object detection"
+            android:defaultValue="5"
+            android:max="10"
+            app:min="1"
+            app:showSeekBarValue="true"
+            app:iconSpaceReserved="false" />
+
+        <SeekBarPreference
+            android:key="detection_frequency"
+            android:title="Detection Frequency"
+            android:summary="How often to process camera frames"
+            android:defaultValue="5"
+            android:max="10"
+            app:min="1"
+            app:showSeekBarValue="true"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Accessibility"
+        android:key="accessibility_category"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="dark_mode"
+            android:title="Dark Mode"
+            android:summary="Use dark theme for better contrast"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="high_contrast"
+            android:title="High Contrast Mode"
+            android:summary="Increase contrast for better visibility"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="enable_haptic"
+            android:title="Haptic Feedback"
+            android:summary="Enable vibration on detection"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="About"
+        android:key="about_category"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="about_app"
+            android:title="About Vision Assist"
+            android:summary="Learn about the app and how to use it"
+            app:iconSpaceReserved="false" />
+
+        <Preference
+            android:key="tutorial"
+            android:title="Start Tutorial"
+            android:summary="Go through the app tutorial again"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>
